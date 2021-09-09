@@ -6,7 +6,7 @@ export default function GenericList(props: genericListProps) {
         if (props.loadingUI) {
             return props.loadingUI;
         }
-
+        
         return <Loading />;
     }
 
