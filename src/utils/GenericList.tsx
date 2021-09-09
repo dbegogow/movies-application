@@ -1,5 +1,5 @@
-import { genericListProps } from "./genericListProps.module";
-import Loading from "./Loading";
+import { genericListProps } from './genericListProps.module';
+import Loading from './Loading';
 
 export default function GenericList(props: genericListProps) {
     if (!props.list) {

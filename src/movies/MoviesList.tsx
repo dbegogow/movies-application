@@ -1,7 +1,7 @@
-import css from "./MoviesList.module.css";
-import { moviesListProps } from "./moviesListProps.module";
-import IndividualMovie from "./IndividualMovie";
-import GenericList from "../utils/GenericList";
+import css from './MoviesList.module.css';
+import { moviesListProps } from './moviesListProps.module';
+import IndividualMovie from './IndividualMovie';
+import GenericList from '../utils/GenericList';
 
 export default function MoviesList(props: moviesListProps) {
     return (
