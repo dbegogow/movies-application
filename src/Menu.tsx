@@ -8,9 +8,29 @@ export default function Menu() {
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" href="/genres">
+                            <NavLink className="nav-link" to="/genres">
                                 Genres
-                            </a>
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/movies/filter">
+                                Filter Movies
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/actors">
+                                Actors
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/movie-theaters">
+                                Movie Theaters
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/movies/create">
+                                Create a Movie
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
