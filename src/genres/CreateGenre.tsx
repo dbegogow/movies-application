@@ -1,6 +1,8 @@
-import { Link } from "react-router-dom";
-import { Field, Form, Formik } from "formik";
-import Button from "../utils/Button";
+import { Link } from 'react-router-dom';
+import { Form, Formik } from 'formik';
+import * as Yup from 'yup';
+import Button from '../utils/Button';
+import TextField from '../forms/TextField';
 
 export default function CreateGenre() {
     return (
@@ -14,12 +16,12 @@ export default function CreateGenre() {
                     // when the form is posted
                     console.log(value);
                 }}
+                validationSchema={Yup.object({
+                    name: Yup.string().required('This field is required')
+                })}
             >
                 <Form>
-                    <div className="mb-3">
-                        <label htmlFor="name">Name</label>
-                        <Field name="name" id="name" className="form-control" />
-                    </div>
+                    <TextField field="name" displayName="Name" />
 
                     <Button type="submit">Save Changes</Button>
                     <Link className="btn btn-secondary" to="/genres">Cancel</Link>
