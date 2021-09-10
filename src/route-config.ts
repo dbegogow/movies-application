@@ -17,18 +17,18 @@ const routes = [
 
     { path: '/genres', component: IndexGenres, exact: true },
     { path: '/genres/create', component: CreateGenre },
-    { path: '/genres/edit', component: EditGenre },
+    { path: '/genres/edit/:id(\\d+)', component: EditGenre },
 
     { path: '/actors', component: IndexActors, exact: true },
     { path: '/actors/create', component: CreateActor },
-    { path: '/actors/edit', component: EditActor },
+    { path: '/actors/edit/:id(\\d+)', component: EditActor },
 
     { path: '/movie-theaters', component: IndexMovieTheaters, exact: true },
     { path: '/movie-theaters/create', component: CreateMovieTheater },
-    { path: '/movie-theaters/edit', component: EditMovieTheater },
+    { path: '/movie-theaters/edit/:id(\\d+)', component: EditMovieTheater },
 
-    { path: '/movies/create', component: CreateMovie},
-    { path: '/movies/edit', component: EditMovie },
+    { path: '/movies/create', component: CreateMovie },
+    { path: '/movies/edit/:id(\\d+)', component: EditMovie },
     { path: '/movies/filter', component: FilterMovies }
 ];
 
