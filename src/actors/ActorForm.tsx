@@ -5,6 +5,7 @@ import { actorFormProps } from './actorFormProps.module';
 import TextField from '../forms/TextField';
 import Button from '../utils/Button';
 import DateField from '../forms/DateField';
+import ImageField from '../forms/ImageField';
 
 export default function (props: actorFormProps) {
     return (
@@ -25,8 +26,15 @@ export default function (props: actorFormProps) {
                         displayName="Name"
                         field="name"
                     />
-
-                    <DateField displayName="Date of Birth" field="dateOfBirth" />
+                    <DateField
+                        displayName="Date of Birth"
+                        field="dateOfBirth"
+                    />
+                    <ImageField
+                        displayName="Picture"
+                        field="picture"
+                        imageURL={props.model.pictureURL}
+                    />
 
                     <Button
                         disabled={formikProps.isSubmitting}
