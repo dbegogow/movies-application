@@ -5,7 +5,7 @@ export default function EditActor() {
         <>
             <h3>Edit Actor</h3>
             <ActorForm
-                model={{ name: '', dateOfBirth: undefined }}
+                model={{ name: 'Tom Holland', dateOfBirth: new Date('1996-06-01T00:00:00') }}
                 onSubmit={values => console.log(values)}
             />
         </>

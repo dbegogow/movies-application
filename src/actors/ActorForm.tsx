@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { actorFormProps } from './actorFormProps.module';
 import TextField from '../forms/TextField';
 import Button from '../utils/Button';
+import DateField from '../forms/DateField';
 
 export default function (props: actorFormProps) {
     return (
@@ -14,7 +15,8 @@ export default function (props: actorFormProps) {
                 name: Yup
                     .string()
                     .required('This field is required')
-                    .firstLetterUppercase()
+                    .firstLetterUppercase(),
+                dateOfBirth: Yup.date().nullable().required('This field is required')
             })}
         >
             {(formikProps) => (
@@ -23,6 +25,8 @@ export default function (props: actorFormProps) {
                         displayName="Name"
                         field="name"
                     />
+
+                    <DateField displayName="Date of Birth" field="dateOfBirth" />
 
                     <Button
                         disabled={formikProps.isSubmitting}
