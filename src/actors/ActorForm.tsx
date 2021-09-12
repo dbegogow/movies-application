@@ -6,6 +6,7 @@ import TextField from '../forms/TextField';
 import Button from '../utils/Button';
 import DateField from '../forms/DateField';
 import ImageField from '../forms/ImageField';
+import MarkdownField from '../forms/MarkdownField';
 
 export default function (props: actorFormProps) {
     return (
@@ -35,6 +36,7 @@ export default function (props: actorFormProps) {
                         field="picture"
                         imageURL={props.model.pictureURL}
                     />
+                    <MarkdownField displayName="Biography" field="biography" />
 
                     <Button
                         disabled={formikProps.isSubmitting}
