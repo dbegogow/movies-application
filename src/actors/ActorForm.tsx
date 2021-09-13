@@ -8,7 +8,7 @@ import DateField from '../forms/DateField';
 import ImageField from '../forms/ImageField';
 import MarkdownField from '../forms/MarkdownField';
 
-export default function (props: actorFormProps) {
+export default function ActorForm(props: actorFormProps) {
     return (
         <Formik
             initialValues={props.model}
