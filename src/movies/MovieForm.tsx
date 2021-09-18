@@ -10,6 +10,7 @@ import { useState } from "react";
 import { movieFormProps } from "./movieFormProps.module";
 import { multipleSelectorModel } from "../forms/multipleSelector.module";
 import MultipleSelector from "../forms/MultipleSelector";
+import TypeAheadActors from "../forms/TypeAheadActors";
 
 export default function MovieForm(props: movieFormProps) {
 
@@ -82,6 +83,11 @@ export default function MovieForm(props: movieFormProps) {
                             setSelectedMovieTheaters(selected);
                             setNonSelectedMovieTheaters(nonSelected);
                         }}
+                    />
+
+                    <TypeAheadActors
+                        displayName="Actors"
+                        actors={[]}
                     />
 
                     <Button
