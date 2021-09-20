@@ -1,6 +1,6 @@
 import { useFormikContext } from 'formik';
 import { ChangeEvent, useState } from 'react';
-import { imageFieldProps } from './imageFieldProps.module';
+import { imageFieldProps } from './interfaces/imageFieldProps.module';
 
 export default function ImageField(props: imageFieldProps) {
     const [imageBase64, setImageBase64] = useState('');

@@ -1,4 +1,4 @@
-import { buttonProps } from './buttonProps.module';
+import { buttonProps } from './interfaces/buttonProps.module';
 
 export default function Button(props: buttonProps) {
     return (

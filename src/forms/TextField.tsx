@@ -1,5 +1,5 @@
 import { ErrorMessage, Field } from 'formik';
-import { textFieldProps } from './textFieldProps.module';
+import { textFieldProps } from './interfaces/textFieldProps.module';
 
 export default function TextField(props: textFieldProps) {
     return (

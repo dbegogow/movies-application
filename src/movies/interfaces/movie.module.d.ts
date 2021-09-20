@@ -1,4 +1,4 @@
-import { actorMovieDTO } from "../actors/actors.module";
+import { actorMovieDTO } from "../../actors/interfaces/actors.module";
 
 export interface movieDTO {
     id: number;

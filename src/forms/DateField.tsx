@@ -1,5 +1,5 @@
 import { useFormikContext } from 'formik';
-import { dateFieldProps } from './dateFieldProps.module';
+import { dateFieldProps } from './interfaces/dateFieldProps.module';
 
 export default function DateField(props: dateFieldProps) {
     const { values, validateForm, touched, errors } = useFormikContext<any>();

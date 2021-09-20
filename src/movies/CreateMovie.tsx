@@ -1,5 +1,5 @@
-import { genreDTO } from '../genres/genres.module';
-import { movieTheaterDTO } from '../movieTheaters/movieTheater.model';
+import { genreDTO } from '../genres/interfaces/genres.module';
+import { movieTheaterDTO } from '../movieTheaters/interfaces/movieTheater.model';
 import MovieForm from './MovieForm';
 
 export default function CreateMovie() {

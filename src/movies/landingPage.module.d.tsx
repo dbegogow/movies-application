@@ -1,4 +1,4 @@
-import { movieDTO } from './movie.module';
+import { movieDTO } from './interfaces/movie.module';
 
 export interface landingPageDTO {
     inTheaters?: movieDTO[];

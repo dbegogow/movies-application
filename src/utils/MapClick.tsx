@@ -1,5 +1,5 @@
 import { useMapEvent } from 'react-leaflet';
-import { mapClickProps } from './mapClickProps.module';
+import { mapClickProps } from './interfaces/mapClickProps.module';
 
 export default function MapClick(props: mapClickProps) {
     useMapEvent('click', eventArgs => {

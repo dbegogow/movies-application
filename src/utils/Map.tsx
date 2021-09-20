@@ -4,9 +4,9 @@ import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import 'leaflet/dist/leaflet.css';
-import { mapProps } from './mapProps.module';
+import { mapProps } from './interfaces/mapProps.module';
 import MapClick from './MapClick';
-import { coordinateDTO } from './coordinates.module';
+import { coordinateDTO } from './interfaces/coordinates.module';
 
 const defaultIcon = L.icon({
     iconUrl: icon,

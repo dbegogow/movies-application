@@ -1,6 +1,6 @@
 import { Typeahead } from 'react-bootstrap-typeahead';
-import { typeAheadActorsProps } from './typeAheadActorsProps.module';
-import { actorMovieDTO } from '../actors/actors.module';
+import { typeAheadActorsProps } from './interfaces/typeAheadActorsProps.module';
+import { actorMovieDTO } from '../actors/interfaces/actors.module';
 import { useState } from 'react';
 
 export default function TypeAheadActors(props: typeAheadActorsProps) {

@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ulrGenres } from '../endpoints';
-import { genreDTO } from './genres.module';
+import { genreDTO } from './interfaces/genres.module';
 
 export default function IndexGenres() {
     useEffect(() => {

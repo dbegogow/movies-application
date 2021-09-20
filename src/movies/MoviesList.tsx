@@ -1,5 +1,5 @@
 import css from './MoviesList.module.css';
-import { moviesListProps } from './moviesListProps.module';
+import { moviesListProps } from './interfaces/moviesListProps.module';
 import IndividualMovie from './IndividualMovie';
 import GenericList from '../utils/GenericList';
 

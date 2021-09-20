@@ -1,6 +1,6 @@
 import { Field, useFormikContext } from 'formik';
 import ReactMarkdown from 'react-markdown';
-import { markdownFieldProps } from './markdownFieldProps';
+import { markdownFieldProps } from './interfaces/markdownFieldProps.module';
 import './MarkdownField.css';
 
 export default function MarkdownField(props: markdownFieldProps) {

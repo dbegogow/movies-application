@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { genreFormProps } from './genreFormProps.module';
+import { genreFormProps } from './interfaces/genreFormProps.module';
 import Button from '../utils/Button';
 import TextField from '../forms/TextField';
 

@@ -1,7 +1,7 @@
 import { Field, Form, Formik } from 'formik';
-import { genreDTO } from '../genres/genres.module';
+import { genreDTO } from '../genres/interfaces/genres.module';
 import Button from '../utils/Button';
-import { filterMoviesForm } from './filterMoviesForm.module';
+import { filterMoviesForm } from './interfaces/filterMoviesForm.module';
 
 export default function FilterMovies() {
     const initialValues: filterMoviesForm = {

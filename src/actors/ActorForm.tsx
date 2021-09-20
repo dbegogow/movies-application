@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
-import { actorFormProps } from './actorFormProps.module';
+import { actorFormProps } from './interfaces/actorFormProps.module';
 import TextField from '../forms/TextField';
 import Button from '../utils/Button';
 import DateField from '../forms/DateField';

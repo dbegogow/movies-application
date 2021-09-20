@@ -7,11 +7,11 @@ import ImageField from '../forms/ImageField';
 import DateField from '../forms/DateField';
 import CheckboxField from '../forms/CheckboxField';
 import { useState } from "react";
-import { movieFormProps } from "./movieFormProps.module";
-import { multipleSelectorModel } from "../forms/multipleSelector.module";
+import { movieFormProps } from "./interfaces/movieFormProps.module";
+import { multipleSelectorModel } from "../forms/interfaces/multipleSelector.module";
 import MultipleSelector from "../forms/MultipleSelector";
 import TypeAheadActors from "../forms/TypeAheadActors";
-import { actorMovieDTO } from "../actors/actors.module";
+import { actorMovieDTO } from "../actors/interfaces/actors.module";
 
 export default function MovieForm(props: movieFormProps) {
 

@@ -1,5 +1,5 @@
 import css from './IndividualMovie.module.css';
-import { movieDTO } from './movie.module';
+import { movieDTO } from './interfaces/movie.module';
 
 export default function IndividualMovie(props: movieDTO) {
     const buildLink = () => `/movie/${props.id}`;

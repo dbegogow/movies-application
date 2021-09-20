@@ -1,4 +1,4 @@
-import { coordinateDTO } from '../utils/coordinates.module';
+import { coordinateDTO } from '../../utils/interfaces/coordinates.module';
 
 export interface mapFieldProps {
     coordinates: coordinateDTO[];

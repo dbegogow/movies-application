@@ -1,5 +1,5 @@
 import { Field } from 'formik';
-import { checkboxField } from './checkboxField.module';
+import { checkboxField } from './interfaces/checkboxField.module';
 
 export default function CheckboxField(props: checkboxField) {
     return (

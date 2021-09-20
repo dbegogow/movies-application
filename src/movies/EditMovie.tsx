@@ -1,6 +1,6 @@
-import { actorMovieDTO } from '../actors/actors.module';
-import { genreDTO } from '../genres/genres.module';
-import { movieTheaterDTO } from '../movieTheaters/movieTheater.model';
+import { actorMovieDTO } from '../actors/interfaces/actors.module';
+import { genreDTO } from '../genres/interfaces/genres.module';
+import { movieTheaterDTO } from '../movieTheaters/interfaces/movieTheater.model';
 import MovieForm from './MovieForm';
 
 export default function EditMovie() {

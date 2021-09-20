@@ -1,5 +1,5 @@
 import { ReactElement } from 'react-markdown/lib/react-markdown';
-import { actorMovieDTO } from '../actors/actors.module';
+import { actorMovieDTO } from '../../actors/interfaces/actors.module';
 
 export interface typeAheadActorsProps {
     displayName: string;

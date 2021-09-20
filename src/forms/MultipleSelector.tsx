@@ -1,5 +1,5 @@
 import './MultipleSelector.css'
-import { multipleSelectorModel, multipleSelectorProps } from './multipleSelector.module';
+import { multipleSelectorModel, multipleSelectorProps } from './interfaces/multipleSelector.module';
 
 export default function MultipleSelector(props: multipleSelectorProps) {
 

@@ -1,8 +1,8 @@
 import { FormikHelpers } from 'formik';
-import { genreDTO } from '../genres/genres.module';
+import { genreDTO } from '../../genres/interfaces/genres.module';
 import { movieCreationDTO } from './movie.module';
-import { movieTheaterDTO } from '../movieTheaters/movieTheater.model';
-import { actorMovieDTO } from '../actors/actors.module';
+import { movieTheaterDTO } from '../../movieTheaters/interfaces/movieTheater.model';
+import { actorMovieDTO } from '../../actors/interfaces/actors.module';
 
 export interface movieFormProps {
     model: movieCreationDTO;
