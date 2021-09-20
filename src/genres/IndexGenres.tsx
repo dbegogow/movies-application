@@ -1,12 +1,13 @@
 import axios, { AxiosResponse } from 'axios';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { ulrGenres } from '../endpoints';
 import { genreDTO } from './genres.module';
 
 export default function IndexGenres() {
     useEffect(() => {
         axios
-            .get('https://localhost:5001/api/genres')
+            .get(ulrGenres)
             .then((response: AxiosResponse<genreDTO[]>) => {
                 console.log(response.data);
             });
