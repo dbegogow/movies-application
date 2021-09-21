@@ -16,7 +16,7 @@ export default function MovieTheaterForm(props: movieTheaterForm) {
         }
 
         return undefined;
-    };
+    }
 
     return (
         <Formik
@@ -47,4 +47,4 @@ export default function MovieTheaterForm(props: movieTheaterForm) {
             )}
         </Formik>
     );
-};
+}

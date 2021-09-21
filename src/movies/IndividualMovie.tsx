@@ -14,4 +14,4 @@ export default function IndividualMovie(props: movieDTO) {
             </p>
         </div>
     );
-};
+}

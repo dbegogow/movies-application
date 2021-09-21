@@ -41,7 +41,7 @@ export default function Map(props: mapProps) {
             }
         </MapContainer>
     );
-};
+}
 
 Map.defaultProps = {
     height: '500px'

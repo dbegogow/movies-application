@@ -10,7 +10,7 @@ export default function Button(props: buttonProps) {
             {props.children}
         </button>
     );
-};
+}
 
 Button.defaultProps = {
     type: 'button',

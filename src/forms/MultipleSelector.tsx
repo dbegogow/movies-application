@@ -7,25 +7,25 @@ export default function MultipleSelector(props: multipleSelectorProps) {
         const selected = [...props.selected, item];
         const nonSelected = props.nonSelected.filter(value => value !== item);
         props.onChange(selected, nonSelected);
-    }
+    };
 
     function deselect(item: multipleSelectorModel) {
         const nonSelected = [...props.nonSelected, item];
         const selected = props.selected.filter(value => value !== item);
         props.onChange(selected, nonSelected);
-    }
+    };
 
     function selectAll() {
         const selected = [...props.selected, ...props.nonSelected];
         const nonSelected: multipleSelectorModel[] = [];
         props.onChange(selected, nonSelected);
-    }
+    };
 
     function deselectAll() {
         const nonSelected = [...props.nonSelected, ...props.selected];
         const selected: multipleSelectorModel[] = [];
         props.onChange(selected, nonSelected);
-    }
+    };
 
     return (
         <div className="mb-3">

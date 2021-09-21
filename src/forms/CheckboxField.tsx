@@ -14,4 +14,4 @@ export default function CheckboxField(props: checkboxField) {
             <label htmlFor={props.field}>{props.displayName}</label>
         </div>
     );
-};
+}

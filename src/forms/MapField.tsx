@@ -17,7 +17,7 @@ export default function MapField(props: mapFieldProps) {
             handleMapClick={handleMapClick}
         />
     );
-};
+}
 
 MapField.defaultProps = {
     coordinates: []

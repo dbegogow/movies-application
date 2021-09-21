@@ -26,4 +26,4 @@ export default function DateField(props: dateFieldProps) {
             }
         </div>
     );
-};
+}

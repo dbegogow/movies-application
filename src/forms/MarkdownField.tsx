@@ -22,4 +22,4 @@ export default function MarkdownField(props: markdownFieldProps) {
             </div>
         </div>
     );
-};
+}

@@ -49,4 +49,4 @@ export default function ActorForm(props: actorFormProps) {
             )}
         </Formik>
     );
-};
+}

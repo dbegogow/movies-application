@@ -13,6 +13,7 @@ export default function GenreForm(props: genreFormProps) {
                 name: Yup
                     .string()
                     .required('This field is required')
+                    .max(50, 'Max length is 50 characters')
                     .firstLetterUppercase()
             })}
         >
@@ -26,4 +27,4 @@ export default function GenreForm(props: genreFormProps) {
             )}
         </Formik>
     );
-};
+}

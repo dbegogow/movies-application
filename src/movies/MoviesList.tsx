@@ -12,4 +12,4 @@ export default function MoviesList(props: moviesListProps) {
             </div>
         </GenericList>
     );
-};
+}

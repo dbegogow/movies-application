@@ -18,7 +18,7 @@ export default function EditMovie() {
             character: 'Geralt',
             picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/800px-Tom_Holland_by_Gage_Skidmore.jpg'
         },
-    ]
+    ];
 
     return (
         <>

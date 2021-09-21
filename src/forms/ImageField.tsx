@@ -62,7 +62,7 @@ export default function ImageField(props: imageFieldProps) {
             }
         </div>
     );
-};
+}
 
 ImageField.defaultProps = {
     imageURL: ''
