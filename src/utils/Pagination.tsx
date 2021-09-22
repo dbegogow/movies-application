@@ -40,7 +40,7 @@ export default function Pagination(props: paginationProps) {
             active: false
         });
 
-        for (let i = 0; i <= props.totalAmountOfPages; i++) {
+        for (let i = 1; i <= props.totalAmountOfPages; i++) {
             if (i >= props.currentPage - props.radio && i <= props.currentPage + props.radio) {
                 links.push({
                     text: `${i}`,
@@ -83,3 +83,7 @@ export default function Pagination(props: paginationProps) {
         </nav>
     );
 }
+
+Pagination.defaultProps = {
+    radio: 3
+};
