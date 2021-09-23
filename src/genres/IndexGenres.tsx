@@ -7,6 +7,7 @@ import Button from '../utils/Button';
 import GenericList from '../utils/GenericList';
 import Pagination from '../utils/Pagination';
 import RecordsPerPageSelect from '../utils/RecordsPerPageSelect';
+import customConfirm from '../utils/customConfirm';
 
 export default function IndexGenres() {
     const [genres, setGenres] = useState<genreDTO[]>();
@@ -15,6 +16,10 @@ export default function IndexGenres() {
     const [page, setPage] = useState(1);
 
     useEffect(() => {
+        loadData();
+    }, [page, recordsPerPage]);
+
+    function loadData() {
         axios
             .get(urlGenres, {
                 params: { page, recordsPerPage }
@@ -26,7 +31,19 @@ export default function IndexGenres() {
 
                 setGenres(response.data);
             });
-    }, [page, recordsPerPage]);
+    }
+
+    async function deleteGenre(id: number) {
+        try {
+            await axios.delete(`${urlGenres}/${id}`);
+
+            loadData();
+        } catch (error: any) {
+            if (error && error.response) {
+                console.error(error.response.data);
+            }
+        }
+    }
 
     return (
         <>
@@ -65,7 +82,12 @@ export default function IndexGenres() {
                                         >
                                             Edit
                                         </Link>
-                                        <Button className="btn btn-danger">Delete</Button>
+                                        <Button
+                                            onClick={() => customConfirm(() => deleteGenre(genre.id))}
+                                            className="btn btn-danger"
+                                        >
+                                            Delete
+                                        </Button>
                                     </td>
                                     <td>
                                         {
