@@ -61,7 +61,7 @@ export default function IndexGenres() {
                                     <td>
                                         <Link
                                             className="btn btn-success"
-                                            to={`/genres/${genre.id}`}
+                                            to={`/genres/edit/${genre.id}`}
                                         >
                                             Edit
                                         </Link>
